@@ -1,0 +1,4 @@
+parameters:
+  renovate_runner:
+    =_metadata: {}
+    namespace: syn-renovate-runner

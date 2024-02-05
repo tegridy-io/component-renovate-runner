@@ -1,0 +1,5 @@
+= Renovate Runner
+
+renovate-runner is a Commodore component to manage Renovate Runner.
+
+See the xref:references/parameters.adoc[parameters] reference for further details.
