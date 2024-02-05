@@ -15,5 +15,27 @@ The namespace in which to deploy this component.
 
 [source,yaml]
 ----
-namespace: example-namespace
+parameters:
+  renovate_runner:
+    renovate:
+      gitlab:
+        type: renovate <1>
+        schedule: '0 * * * *' <2>
+        secrets: <3>
+          GITLAB_COM_TOKEN: my-token
+          RENOVATE_TOKEN: my-token
+        config: | <4>
+          {
+            "platform": "gitlab",
+            "token": "$GITLAB_COM_TOKEN",
+            "gitAuthor": "Renovate Bot <bob@bot.io>",
+            "autodiscover": true,
+            "autodiscoverFilter": ["!/my-group/syn/"],
+            "onboarding": true,
+            "printConfig": true
+          }
 ----
+<1> Type of renovate run, either 'renovate' or 'commodore'.
+<2> Plan when to run renovate.
+<3> Any secrets needed for renovate config.
+<4> Config to run with renovate.
