@@ -7,11 +7,6 @@ parameters:
       labels: {}
       name: syn-renovate-runner
 
-    charts:
-      renovate:
-        source: https://docs.renovatebot.com/helm-charts
-        version: 37.172.4
-
     images:
       commodore:
         registry: ghcr.io
