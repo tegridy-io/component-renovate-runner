@@ -1,4 +1,25 @@
 parameters:
   renovate_runner:
     =_metadata: {}
-    namespace: syn-renovate-runner
+
+    namespace:
+      annotations: {}
+      labels: {}
+      name: syn-renovate-runner
+
+    charts:
+      renovate:
+        source: https://docs.renovatebot.com/helm-charts
+        version: 37.172.4
+
+    images:
+      commodore:
+        registry: ghcr.io
+        repository: projectsyn/commodore-renovate
+        tag: v0.15.0
+      renovate:
+        registry: ghcr.io
+        repository: renovatebot/renovate
+        tag: 37.172.4
+
+    renovate: {}
