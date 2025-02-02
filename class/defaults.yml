@@ -1,6 +1,7 @@
 parameters:
   renovate_runner:
-    =_metadata: {}
+    =_metadata:
+      multi_tenant: true
 
     namespace:
       annotations: {}
