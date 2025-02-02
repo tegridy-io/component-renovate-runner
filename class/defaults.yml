@@ -11,7 +11,7 @@ parameters:
       commodore:
         registry: ghcr.io
         repository: projectsyn/commodore-renovate
-        tag: v0.15.0
+        tag: v0.19.7
       renovate:
         registry: ghcr.io
         repository: renovatebot/renovate
