@@ -75,7 +75,7 @@ spec:
               envFrom:
                 - secretRef:
                     name: gitlab-commodore
-              image: ghcr.io/projectsyn/commodore-renovate:v0.19.7
+              image: ghcr.io/projectsyn/commodore-renovate:v0.21.0
               imagePullPolicy: IfNotPresent
               name: default
               volumeMounts:
