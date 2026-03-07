@@ -74,7 +74,7 @@ spec:
               envFrom:
                 - secretRef:
                     name: gitlab
-              image: ghcr.io/renovatebot/renovate:42.0.3
+              image: ghcr.io/renovatebot/renovate:42.99.0
               imagePullPolicy: IfNotPresent
               name: default
               volumeMounts:
