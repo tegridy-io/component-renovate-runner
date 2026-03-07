@@ -16,6 +16,6 @@ parameters:
       renovate:
         registry: ghcr.io
         repository: renovatebot/renovate
-        tag: 42.0.3
+        tag: 42.99.0
 
     renovate: {}
